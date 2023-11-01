@@ -6,9 +6,11 @@ class Globals:
   hub_dir: str = 'Holy-Unblocker'
   van_dir: str = 'Vanadium'
   lud_dir: str = 'Ludicrous'
+  met_dir: str = 'Metallic'
   holy_ub: list = ['npm install', 'npm start']
   vanadium: list = ['npm install', 'npm start']
   ludicrous: list = ['npm install', 'npm run build', 'npm start']
+  metallic: list = ['npm install', 'npm run build', 'npm start']
 
 
 def run_npm_commands(command_list: list, cd_dir: str = '') -> None:
@@ -23,7 +25,6 @@ def run_npm_commands(command_list: list, cd_dir: str = '') -> None:
 
 
 def determine_network() -> None:
-  # have to fix the preset calls
   cur_dir: str = os.getcwd().replace('\\', '/')
   dir_list: list = cur_dir.split('/')
   if dir_list[-1] == Globals.hub_dir:
@@ -50,16 +51,26 @@ def determine_network() -> None:
       print('Please provide a digit.')
       time.sleep(2)
       determine_network()
+    if usr_input > len(folder_list) or usr_input < len(folder_list):
+      print('Please provide a valid digit.')
+      time.sleep(2)
+      determine_network()
 
     else:
       print(folder_list[int(usr_input) - 1])
       folder: int = folder_list[int(usr_input) - 1]
       if folder == Globals.hub_dir:
         preset: list = Globals.holy_ub
+
       elif folder == Globals.van_dir:
         preset: list = Globals.vanadium
+
       elif folder == Globals.lud_dir:
         preset: list = Globals.ludicrous
+
+      elif folder == Globals.met_dir:
+        preset: list = Globals.metallic
+
       run_npm_commands(preset, f'sites/{folder}')
 
 
