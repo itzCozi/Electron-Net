@@ -3,9 +3,9 @@ import time
 
 
 class Globals:
-  hub_dir: str = 'sites/Holy-Unblocker'
-  van_dir: str = 'sites/Vanadium'
-  lud_dir: str = 'sites/Ludicrous'
+  hub_dir: str = 'Holy-Unblocker'
+  van_dir: str = 'Vanadium'
+  lud_dir: str = 'Ludicrous'
   holy_ub: list = ['npm install', 'npm start']
   vanadium: list = ['npm install', 'npm start']
   ludicrous: list = ['npm install', 'npm run build', 'npm start']
@@ -52,14 +52,15 @@ def determine_network() -> None:
       determine_network()
 
     else:
+      print(folder_list[int(usr_input) - 1])
       folder: int = folder_list[int(usr_input) - 1]
       if folder == Globals.hub_dir:
         preset: list = Globals.holy_ub
-      if folder == Globals.van_dir:
+      elif folder == Globals.van_dir:
         preset: list = Globals.vanadium
-      if folder == Globals.lud_dir:
+      elif folder == Globals.lud_dir:
         preset: list = Globals.ludicrous
-      run_npm_commands(preset, folder)
+      run_npm_commands(preset, f'sites/{folder}')
 
 
 determine_network()

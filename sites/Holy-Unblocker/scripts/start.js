@@ -1,4 +1,4 @@
-import createBareServer from '@tomphttp/bare-server-node';
+import { createBareServer } from '@tomphttp/bare-server-node';
 import address from 'address';
 import chalk from 'chalk';
 import { expand } from 'dotenv-expand';
@@ -7,7 +7,7 @@ import express from 'express';
 import proxy from 'express-http-proxy';
 import { createServer } from 'node:http';
 import { join } from 'node:path';
-import createRammerhead from 'rammerhead/src/server/index';
+import createRammerhead from 'rammerhead/src/server/index.js';
 import { websitePath } from 'website';
 
 // what a dotenv in a project like this serves: .env.local file containing developer port
@@ -127,13 +127,13 @@ while (true) {
 			process.platform === 'win32' ? '\x1B[2J\x1B[0f' : '\x1B[2J\x1B[3J\x1B[H'
 		);
 
+		console.log(
+			`You can now view ${chalk.bold('website-aio')} in the browser.`
+		);
+
 		console.log('');
 
 		const addr = server.address();
-
-    console.log(
-      'Please use the browser link to open UB.\n'
-    );
 
 		console.log(
 			`  ${chalk.bold('Local:')}            http://${
@@ -142,7 +142,7 @@ while (true) {
 		);
 
 		console.log(
-			`  ${chalk.bold('Browser:')}          http://localhost${
+			`  ${chalk.bold('Local:')}            http://localhost${
 				addr.port === 80 ? '' : ':' + chalk.bold(addr.port)
 			}`
 		);
