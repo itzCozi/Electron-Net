@@ -44,14 +44,14 @@ def determine_network() -> None:
         print(item)
         folder_list.append(item)
 
-    usr_input: str = input(
+    usr_input: int = int(input(
       f'\nWhat site would you like to run? (1-{len(folder_list)}): '
-    )
-    if not usr_input.isdigit():
+    ))
+    if not str(usr_input).isdigit():
       print('Please provide a digit.')
       time.sleep(2)
       determine_network()
-    if usr_input > len(folder_list) or usr_input < len(folder_list):
+    if usr_input > len(folder_list) or usr_input < 1:
       print('Please provide a valid digit.')
       time.sleep(2)
       determine_network()
