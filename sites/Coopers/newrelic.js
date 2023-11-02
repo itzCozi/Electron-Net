@@ -8,7 +8,7 @@ exports.config = {
     /**
      * Array of application names.
      */
-    app_name: ['Node Unblocker'],
+    app_name: ['Coopers Unblocker'],
     /**
      * Your New Relic license key.
      */

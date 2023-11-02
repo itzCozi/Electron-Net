@@ -1,10 +1,10 @@
 {
-  "name": "nodeunblocker.com",
+  "name": "coopers-unblocker.com",
   "description": "Web proxy for evading internet censorship",
-  "author": "Nathan Friedly - http://nfriedly.com",
+  "author": "Cooper Ransom",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/nfriedly/nodeunblocker.com/",
+  "homepage": "https://github.com/itzCozi/Electron-Net",
   "dependencies": {
     "express": "^4.13.0",
     "gatling": "^2.0.0",
