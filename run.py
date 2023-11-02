@@ -38,10 +38,12 @@ def determine_network() -> None:
 
   else:
     folder_list: list = []
+    ticker: int = 0
     for item in os.listdir(f'{cur_dir}/sites'):
       if os.path.isdir(f'{cur_dir}/sites/{item}'):
+        ticker += 1
         item: str = item.replace('\\', '/')
-        print(item)
+        print(f'{ticker} | {item}')
         folder_list.append(item)
 
     usr_input: int = int(input(
@@ -57,7 +59,7 @@ def determine_network() -> None:
       determine_network()
 
     else:
-      print(folder_list[int(usr_input) - 1])
+      print(f'({usr_input}) : {folder_list[int(usr_input) - 1]}')
       folder: int = folder_list[int(usr_input) - 1]
       if folder == Globals.hub_dir:
         preset: list = Globals.holy_ub
