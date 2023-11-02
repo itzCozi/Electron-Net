@@ -59,7 +59,7 @@ def determine_network() -> None:
       determine_network()
 
     else:
-      print(f'({usr_input}) : {folder_list[int(usr_input) - 1]}')
+      print(f'({usr_input}) : {folder_list[int(usr_input) - 1]}\n')
       folder: int = folder_list[int(usr_input) - 1]
       if folder == Globals.hub_dir:
         preset: list = Globals.holy_ub
