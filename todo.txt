@@ -1,3 +1,5 @@
+THIS BEFORE ANYTHING ELSE: https://www.codecademy.com/enrolled/courses/learn-java
+
 DO THIS: https://github.com/oxylabs/selenium-proxy-integration-python
 
 Add preset for Simpl3 site
