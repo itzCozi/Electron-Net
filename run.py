@@ -7,8 +7,8 @@ class Globals:
   van_dir: str = 'Vanadium'
   lud_dir: str = 'Ludicrous'
   met_dir: str = 'Metallic'
-  cop_dir: str = 'Coopers'
-  coop_ub: list = ['npm install', 'npm start']
+  exa_dir: str = 'Example'
+  example_ub: list = ['npm install', 'npm start']
   holy_ub: list = ['npm install', 'npm start']
   vanadium: list = ['npm install', 'npm start']
   ludicrous: list = ['npm install', 'npm run build', 'npm start']
@@ -75,8 +75,8 @@ def determine_network() -> None:
       elif folder == Globals.met_dir:
         preset: list = Globals.metallic
 
-      elif folder == Globals.cop_dir:
-        preset: list = Globals.coop_ub
+      elif folder == Globals.exa_dir:
+        preset: list = Globals.example_ub
       run_npm_commands(preset, f'sites/{folder}')
 
 
