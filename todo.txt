@@ -1,22 +1,16 @@
-* DO THIS: https://github.com/oxylabs/selenium-proxy-integration-python
 
-1. Add preset for Simpl3 site
+* Make VPN Server: https://docs.titaniumnetwork.org/guides/vpn-setup
 
-2. Make VPN Server: https://docs.titaniumnetwork.org/guides/vpn-setup
-
-3(maybe). Deploy RAMMERHEAD: https://docs.titaniumnetwork.org/proxies/rammerhead
-(https://browser.rammerhead.org)
-
-4. Create a website and upload a working unblocker
+* Create a website and upload a working unblocker
 (name it after cooper) - (https://time2hack.com/create-your-own-proxy-website/)
 
-5. https://holyubvpn.com/dashboard
+* https://holyubvpn.com/dashboard
 
-6. https://youtu.be/qTvP6TM---I?si=AAf2vpHn7I-1KaSl
+* https://youtu.be/qTvP6TM---I?si=AAf2vpHn7I-1KaSl
 
-7. HU MIRROR: boiledeggs.org
+* HU MIRROR: boiledeggs.org
 
-8. Railway app (currently hosting): hypertabs-production-bcb0.up.railway.app
+* Railway app (currently hosting): hypertabs-production-bcb0.up.railway.app
 
 
 END GOAL: Find the best proxy site for CMS filter and host it on railway
@@ -24,10 +18,10 @@ for all AK students also ensure the code running in railway app is a branch
 of the Electron-Net repository
 
 --- BEST SITES --- (Scout these sites and pick the best one!)
-* Hypertabs
-* Holy unblocker
-* Nebula (https://github.com/NebulaServices/Nebula)
-* Terbium
+* Hypertabs             (https://github.com/itzCozi/Hypertabs)
+* Holy unblocker        (sites/Holy-Unblocker)
+* Nebula                (sites/Nebula)
+* Cobalt                (sites/Cobalt)
 
 --- HELPFUL SITES ---
 https://titaniumsdk.com/api/titanium/network.html : CLI for titaniumnetwork SDK and wiki site
