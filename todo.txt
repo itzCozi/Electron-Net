@@ -22,3 +22,15 @@
 END GOAL: Find the best proxy site for CMS filter and host it on railway
 for all AK students also ensure the code running in railway app is a branch
 of the Electron-Net repository
+
+--- BEST SITES --- (Scout these sites and pick the best one!)
+* Hypertabs
+* Holy unblocker
+* Nebula (https://github.com/NebulaServices/Nebula)
+* Terbium
+
+--- HELPFUL SITES ---
+https://titaniumsdk.com/api/titanium/network.html : CLI for titaniumnetwork SDK and wiki site
+https://github.com/titaniumnetwork-dev : Where to find the best bypass site
+https://mailchimp.com/features/domains/ : For domain name (coopers-site-of-mutiny)
+https://railway.app/dashboard : For hosting the best site for bypassing CMS filtering
