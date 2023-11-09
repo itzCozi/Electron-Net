@@ -16,4 +16,9 @@
 
 7. HU MIRROR: boiledeggs.org
 
-8. TS MIRROR: crazyalgebra.com
+8. Railway app (currently hosting): hypertabs-production-bcb0.up.railway.app
+
+
+END GOAL: Find the best proxy site for CMS filter and host it on railway
+for all AK students also ensure the code running in railway app is a branch
+of the Electron-Net repository
