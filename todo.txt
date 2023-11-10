@@ -1,16 +1,24 @@
+* Shady Hardware 1nstrument Makes Machine Enrollment Retreat {
+  https://sh1mmer.me/
+}
 
-* Make VPN Server: https://docs.titaniumnetwork.org/guides/vpn-setup
+* Make VPN Server {
+  https://docs.titaniumnetwork.org/guides/vpn-setup
+}
 
-* Create a website and upload a working unblocker
-(name it after cooper) - (https://time2hack.com/create-your-own-proxy-website/)
+* Holy Unblocker VPN {
+  https://holyubvpn.com/dashboard
+}
 
-* https://holyubvpn.com/dashboard
+* HU MIRROR = boiledeggs.org
 
-* https://youtu.be/qTvP6TM---I?si=AAf2vpHn7I-1KaSl
+* Railway app (currently hosting) {
+  https://hypertabs-production-bcb0.up.railway.app
+}
 
-* HU MIRROR: boiledeggs.org
-
-* Railway app (currently hosting): hypertabs-production-bcb0.up.railway.app
+* Amethyst modded Rammerhead {
+  https://github.com/amethystnetwork-dev/Rammerhead
+}
 
 
 END GOAL: Find the best proxy site for CMS filter and host it on railway
